@@ -1,0 +1,4 @@
+This file can be deleted.
+
+Copy the xercesc folder from your xerces/include compilation folder to here.
+NAR will include this folder on the include path so that #include <xercesc/...> will be found.

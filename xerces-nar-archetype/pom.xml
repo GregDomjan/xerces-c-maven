@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.apache.xerces</groupId>
+  <artifactId>xercesc-nar-archetype</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>xercesc-archetype</name>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>2.2</version>
+      </extension>
+    </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <description>Meta/Outline to capture Xerces-C++ artifacts in NAR structure</description>
+
+  <url>http://xerces.apache.org/xerces-c/</url>
+
+  <developers>
+    <developer>
+      <id>xerces</id>
+      <name>Apache Software Foundation</name>
+      <email>c-dev@xerces.apache.org</email>
+      <url>http://www.apache.org</url>
+      <organization>Apache Software Foundation</organization>
+      <organizationUrl>http://www.apache.org</organizationUrl>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>https://svn.apache.org/repos/asf/xerces/c/</connection>
+    <url>https://svn.apache.org/repos/asf/xerces/c/</url>
+  </scm>
+</project>

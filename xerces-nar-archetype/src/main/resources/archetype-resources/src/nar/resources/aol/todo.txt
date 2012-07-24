@@ -1,0 +1,12 @@
+This file can be deleted.
+Copy the library files to subfolders here.
+
+NAR doesn't yet know about different C++ runtime versions - it links against what the toolset provides.
+
+ie. pick one VC version, copy both the release and debug versions
+Build/Win64/VC??/Release
+Build/Win64/VC??/Debug
+
+to 
+amd64-Windows-msvc/lib
+

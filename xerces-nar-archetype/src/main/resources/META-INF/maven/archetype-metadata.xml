@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="xercesc"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <requiredProperties>
+    <requiredProperty key="groupId">
+      <defaultValue>org.apache.xerces</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="artifactId">
+      <defaultValue>xercesc</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="version">
+      <defaultValue>3.1.0-SNAPSHOT</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="narOS">
+      <defaultValue>Windows</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="narLinker">
+      <defaultValue>msvc</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="contributorName"/>
+    <requiredProperty key="contributorEmail"/>
+    <requiredProperty key="contributorCompany"/>
+  </requiredProperties>
+
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/nar/resources/aol/x86-__narOS__-__narLinker__/lib</directory>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/nar/resources/aol/amd64-__narOS__-__narLinker__/lib</directory>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>src/nar</directory>
+      <includes>
+        <include>**/todo.txt</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>
